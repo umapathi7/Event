@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Contact</title>
+    <link rel="stylesheet" href="D:\Instagram\hello\style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="item">
+        <h1>Flipkart</h1>
+        <div class="links">
+            <p class="link">
+                <a href="D:\Instagram\hello\hello.html">Home</a>
+            </p>
+            <p class="link">
+                <a href="contact.html">Login</a>
+            </p>
+            <p class="link">
+                <a href="D:\Instagram\hello\search.html">Collection</a>
+            </p>
+        </div>
+        <div class="menu" onclick="change1()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <!-- SIDE MENU -->
+    <div class="side">
+        <p onclick="change2()" style="text-align:right">
+            <i class="fa-solid fa-x"></i>
+        </p>
+        <div class="side-links">
+            <p class="side-link">
+                <a href="D:\Instagram\hello\hello.html">Home</a>
+            </p>
+            <p class="side-link">
+                <a href="contact.html">Contact</a>
+            </p>
+            <p class="side-link">
+                <a href="D:\Instagram\hello\search.html">Collection</a>
+            </p>
+        </div>
+    </div>
+    <!-- CONTACT PAGE -->
+    <div class="contact-page">
+        <div class="contact-box">
+            <!-- PROFILE -->
+            <div class="profile">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzf9xolr5o_fbqfIvhhpnIZwU9WlDN5YhPU4LX_fiTUw&s=10">
+                <h1  id="one">UMAPATHI</h1>
+                <p class="online">
+                    <i class="fa-solid fa-circle"></i>
+                    Online
+                </p>
+            </div>
+            <!-- DETAILS -->
+            <div class="details">
+                <div class="detail">
+                    <i class="fa-solid fa-user"></i>
+                <div>
+                        <small>Name</small>
+                        <p id="two">UMAPATHI</p>
+                    </div>
+                </div>
+                <div class="detail">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <small>Address</small>
+                        <p  id="three">NAGARI, AP, India</p>
+                    </div>
+                </div>
+                <div class="detail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <small>Email</small>
+                        <p  id="four">umapathi@gmail.com</p>
+                    </div>
+                </div>
+                <div class="detail">
+                    <i class="fa-solid fa-phone"></i>
+                <div>
+                        <small>Phone</small>
+                        <p id="five">+91 98765 43210</p>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <div class="c1"><button onclick="Change4()" >Change detials</button></div>
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer-continer">
+            <div class="icon">
+                <h1>Flipkart</h1>
+             <p>
+                    Your phone, your style.
+                </p>
+                <div>
+                    <i class="fa-brands fa-instagram"
+                       style="color:white"></i>
+                    <i class="fa-brands fa-facebook"
+                       style="color:white"></i>
+                    <i class="fa-brands fa-youtube"
+                       style="color:white"></i>
+                </div>
+            </div>
+        </div>
+        <p>@2026flipkart.com</p>
+    </div>
+    <div class="sigup">
+        <img src="https://c4.wallpaperflare.com/wallpaper/1020/1/213/world-of-warcraft-battle-for-azeroth-video-games-warcraft-alliance-wallpaper-preview.jpg">
+    <div class="blur">
+    <form>
+        <center>
+        <h1 style="color:rgb(68, 41, 204)"> Login</h1>
+        </center>
+        <br>
+        <table>
+        <tr> <td><label>Full Name:</label></td>
+        <td><input type="text" id="one1" placeholder="Enter your name" required>
+            </td>
+        </tr>
+        <tr>
+        <td> <label>Email:</label></td>
+       <td> <input type="email"  id="two2" placeholder="Enter your email" required></td>
+        </tr>
+        <tr>
+            <td>
+        <label>Phone:</label>
+        </td>
+        <td>
+        <input type="tel" id="three3" placeholder="Enter phone number" required>
+        </td>
+        </tr>
+       
+        <tr>
+            <td>
+        <label>Address:</label>
+        </td>
+         <td>
+        <input type="text" id="four4" placeholder="Enter your address"></textarea>
+        </td>
+        </tr>
+        <tr>
+            <td colspan="4"><button type="submit" onclick="change3()" style="background-color: rgb(19, 174, 226);font-size: 20px; padding: 10px;border-radius: 10px;border: none;width: 100%;">Register</button></td>
+        </tr>
+          </table>
+        <br> 
+         </form>
+    </div>
+    </div>
+    <script>
+        var sidelink =document.querySelector(".side");
+        function change1() {
+            sidelink.style.left = "0";
+        }
+        function change2() {
+            sidelink.style.left = "-60%";
+        }
+        var sigup=document.querySelector(".sigup")
+        var footer=document.querySelector(".footer")
+        sigup.style.display ="none";
+        function Change4(){
+            sigup.style.display ="block";
+            footer.style.display= "none";
+        }
+          function change3(){
+            sigup.style.display ="none";
+               footer.style.display= "block";
+          
+          var one=document.getElementById("one")
+          var two =document.getElementById("two")
+          var three=document.getElementById("three")
+          var four=document.getElementById("four")
+          var five=document.getElementById("five")
+          var one1=document.getElementById("one1").value
+          var two2=document.getElementById("two2").value
+          var three3=document.getElementById("three3").value
+          var four4=document.getElementById("four4").value
+           
+          one.textContent=one1;
+          two.textContent=one1;
+          three.textContent=two2;
+          four.textContent=three3;
+          five.textContent=four4;
+          } 
+
+    </script>
+
+</body>
+</html>

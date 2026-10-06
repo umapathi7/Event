@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+        <link rel="stylesheet" href="style.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" >
+
+</head>
+<body>
+       <nav class="item">
+        <h1>Nasta</h1>
+    <div class="links">
+        <p class="link"><a href="D:\Instagram\hello\hello.html">Home</a></p>
+         <p class="link"><a href="D:\Instagram\hello\sec\contact.html">contact</a></p>
+          <p class="link"><a href="D:\Instagram\hello\search.html">collection</a></p>
+    </div>
+    <div onclick="change1()" class="menu">
+        <i  class="fa-solid fa-bars"></i>
+    </div>
+    </nav>
+    <div class="side">
+        <p style="text-align: right;" onclick="change2()" ><i class="fa-solid fa-x"></i></p>
+       <div class="side-links">
+        <p class="side-link"><a href="D:\Instagram\hello\hello.html">Home</a></p>
+         <p class="side-link"><a href="D:\Instagram\hello\sec\contact.html">contact</a></p>
+          <p class="side-link"><a href="D:\Instagram\hello\search.html">collection</a></p>
+    </div>
+    </div>
+      <br>
+      <div class="find">
+        <div class="find1">
+     <input type="text" placeholder="search" onkeyup="search(event)">
+     <div class="to">
+     <i class="fa-brands fa-searchengin"></i>
+     </div>
+     </div>
+     <br>
+     <br>
+     <div class="top">
+    <div class="arrival">
+        <div class="arrival-container1">
+            <img src="D:\Instagram\images (1).jfif" style="width: 200px;height:200px;object-fit: cover;">
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+            <h1>Naruto</h1>
+
+        </div>
+         <div class="arrival-container1">
+            <img src="D:\Instagram\images.jfif" style="width: 200px;height:200px;object-fit: cover;">
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+            <h1>Itachi</h1>
+
+        </div>
+         <div class="arrival-container1">
+            <img src="D:\Instagram\images (3).jfif" style="width: 200px;height:200px;object-fit: cover;">
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+            <h1>Kakashi</h1>
+
+        </div>
+         <div class="arrival-container1">
+            <img src="D:\Instagram\images (5).jfif" style="width: 200px;height:200px;object-fit: cover;">
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+            <h1>Gojo</h1>
+
+        </div>
+     </div>
+     <br>  
+     <div class="arrival">
+     <div class="arrival-container1">
+            <img src="D:\Instagram\images (1).jfif" style="width: 200px;height:200px;object-fit: cover;">
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+             <h1>Naruto</h1>
+
+        </div>
+         <div class="arrival-container1">
+            <img src="D:\Instagram\images.jfif" style="width: 200px;height:200px;object-fit: cover;">
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+           <h1>Itachi</h1>
+
+        </div>
+         <div class="arrival-container1">
+            <img src="D:\Instagram\images (3).jfif" style="width: 200px;height:200px;object-fit: cover;">
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+             <h1>Kakashi</h1>
+
+        </div>
+         <div class="arrival-container1">
+            <img src="D:\Instagram\images (5).jfif" style="width: 200px;height:200px;object-fit: cover;">
+            <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+            <h1>Gojo</h1>
+
+        </div>
+        </div>
+         </div>
+         </div>
+     <div class="footer">
+          <div class="footer-continer">
+          <div class="icon">
+            <h1>Nasta</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, quia!</p>
+            <div>
+                <i class="fa-brands fa-instagram" style="color:white"></i>
+                  <i class="fa-brands fa-facebook"  style="color:white"></i>
+                    <i class="fa-brands fa-youtube" style="color:white"></i>
+            </div>
+         </div>
+          </div>
+          <p>@2026Nasta.com</p>
+        </div>
+     <script>
+        var sidelink=document.querySelector(".side")
+         
+        function change1(){
+            sidelink.style.left="0"
+        }
+           function change2(){
+            sidelink.style.left="-60%"
+        }
+        var select=""
+        var element=document.querySelector(".top")
+        var elements=element.querySelectorAll(".arrival-container1")
+        function search(event){
+         select=event.target.value.toUpperCase()
+         for(var i=0;i<elements.length;i++){
+            if(elements[i].textContent.toUpperCase().indexOf(select)<0){
+                elements[i].style.display="none"
+            }
+            else{
+                elements[i].style.display="block"
+            }
+         }
+        }
+    </script>
+    
+</body>
+</html>
